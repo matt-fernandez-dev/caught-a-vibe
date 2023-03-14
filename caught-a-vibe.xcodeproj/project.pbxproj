@@ -27,6 +27,7 @@
 		11ECA67129C0247200D797C8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 11ECA67029C0247200D797C8 /* FirebaseStorage */; };
 		11ECA67F29C0287700D797C8 /* HomeMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECA67E29C0287700D797C8 /* HomeMapView.swift */; };
 		11ECA68129C029A500D797C8 /* HomeMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECA68029C029A500D797C8 /* HomeMapViewRepresentable.swift */; };
+		11ECA68329C0392200D797C8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECA68229C0392200D797C8 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		11ECA65529C0234300D797C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		11ECA67E29C0287700D797C8 /* HomeMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapView.swift; sourceTree = "<group>"; };
 		11ECA68029C029A500D797C8 /* HomeMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapViewRepresentable.swift; sourceTree = "<group>"; };
+		11ECA68229C0392200D797C8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		11ECA67529C024D100D797C8 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				11ECA68229C0392200D797C8 /* LocationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			files = (
 				11ECA64829C01BA500D797C8 /* ContentView.swift in Sources */,
 				11ECA67F29C0287700D797C8 /* HomeMapView.swift in Sources */,
+				11ECA68329C0392200D797C8 /* LocationManager.swift in Sources */,
 				11ECA64629C01BA500D797C8 /* caught_a_vibeApp.swift in Sources */,
 				11ECA68129C029A500D797C8 /* HomeMapViewRepresentable.swift in Sources */,
 			);
@@ -413,6 +417,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"caught-a-vibe/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to use your location to find potential vibes near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -441,6 +446,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"caught-a-vibe/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to use your location to find potential vibes near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
