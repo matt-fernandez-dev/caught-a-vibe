@@ -25,6 +25,8 @@
 		11ECA66D29C0247200D797C8 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 11ECA66C29C0247200D797C8 /* FirebaseMessaging */; };
 		11ECA66F29C0247200D797C8 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 11ECA66E29C0247200D797C8 /* FirebasePerformance */; };
 		11ECA67129C0247200D797C8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 11ECA67029C0247200D797C8 /* FirebaseStorage */; };
+		11ECA67F29C0287700D797C8 /* HomeMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECA67E29C0287700D797C8 /* HomeMapView.swift */; };
+		11ECA68129C029A500D797C8 /* HomeMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECA68029C029A500D797C8 /* HomeMapViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		11ECA64929C01BA600D797C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11ECA64C29C01BA600D797C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11ECA65529C0234300D797C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		11ECA67E29C0287700D797C8 /* HomeMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapView.swift; sourceTree = "<group>"; };
+		11ECA68029C029A500D797C8 /* HomeMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapViewRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 		11ECA67329C024B300D797C8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				11ECA67B29C0283F00D797C8 /* HomeMap */,
 				11ECA67829C0250A00D797C8 /* Content */,
 			);
 			path = Core;
@@ -154,6 +159,31 @@
 			sourceTree = "<group>";
 		};
 		11ECA67A29C0251C00D797C8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11ECA67B29C0283F00D797C8 /* HomeMap */ = {
+			isa = PBXGroup;
+			children = (
+				11ECA67D29C0285A00D797C8 /* ViewModel */,
+				11ECA67C29C0285300D797C8 /* Views */,
+			);
+			path = HomeMap;
+			sourceTree = "<group>";
+		};
+		11ECA67C29C0285300D797C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11ECA67E29C0287700D797C8 /* HomeMapView.swift */,
+				11ECA68029C029A500D797C8 /* HomeMapViewRepresentable.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11ECA67D29C0285A00D797C8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -250,7 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				11ECA64829C01BA500D797C8 /* ContentView.swift in Sources */,
+				11ECA67F29C0287700D797C8 /* HomeMapView.swift in Sources */,
 				11ECA64629C01BA500D797C8 /* caught_a_vibeApp.swift in Sources */,
+				11ECA68129C029A500D797C8 /* HomeMapViewRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
