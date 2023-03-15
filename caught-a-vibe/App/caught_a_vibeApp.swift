@@ -25,7 +25,7 @@ struct caught_a_vibeApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeMapView()
+            ContentView().environmentObject(SessionManager.shared)
         }
     }
 }
