@@ -11,6 +11,10 @@ struct RegisterView: View {
     
     @EnvironmentObject var session: SessionManager
     
+    var firestoreManager = FirestoreManager()
+    
+    @State var firstName = ""
+    @State var lastName = ""
     @State var email = ""
     @State var password = ""
     
@@ -21,12 +25,19 @@ struct RegisterView: View {
                 .font(Font.custom("DancingScript-Medium", size: 64))
                 .fontWeight(.semibold)
                 .padding(.bottom, 20)
+            TextField("First Name", text: $firstName)
+                .frame(height: 32)
+            TextField("Last Name", text: $lastName)
+                .frame(height: 32)
             TextField("Email", text: $email)
                 .frame(height: 32)
             SecureField("Password", text: $password)
                 .frame(height: 32)
                 .padding(.bottom, 20)
-            Button(action: { session.signup(email: email, password: password) }) {
+            Button(action: {
+                session.signup(email: email, password: password)
+                firestoreManager.createUser(userFirstName: firstName, userLastName: lastName, userEmail: email)
+            }) {
                 Text("Start vibin'")
                     .frame(maxWidth: .infinity)
                     .foregroundColor(.white)

@@ -35,6 +35,7 @@
 		F3E6885229C15ADA008D880A /* DancingScript-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E6884E29C15ADA008D880A /* DancingScript-Medium.ttf */; };
 		F3E6885329C15ADA008D880A /* DancingScript-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E6884F29C15ADA008D880A /* DancingScript-SemiBold.ttf */; };
 		F3E6885429C15ADA008D880A /* DancingScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E6885029C15ADA008D880A /* DancingScript-Regular.ttf */; };
+		F3E6885729C1FE4D008D880A /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6885629C1FE4D008D880A /* FirestoreManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		F3E6884F29C15ADA008D880A /* DancingScript-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-SemiBold.ttf"; sourceTree = "<group>"; };
 		F3E6885029C15ADA008D880A /* DancingScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Regular.ttf"; sourceTree = "<group>"; };
 		F3E6885529C15B08008D880A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F3E6885629C1FE4D008D880A /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				11ECA68229C0392200D797C8 /* LocationManager.swift */,
 				F3E6884829C15992008D880A /* SessionManager.swift */,
+				F3E6885629C1FE4D008D880A /* FirestoreManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				11ECA64629C01BA500D797C8 /* caught_a_vibeApp.swift in Sources */,
 				F3E6884B29C159CD008D880A /* RegisterView.swift in Sources */,
 				11ECA68129C029A500D797C8 /* HomeMapViewRepresentable.swift in Sources */,
+				F3E6885729C1FE4D008D880A /* FirestoreManager.swift in Sources */,
 				F3E6884929C15992008D880A /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
