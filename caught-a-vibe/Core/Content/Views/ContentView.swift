@@ -6,16 +6,24 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
+
+    @EnvironmentObject var session: SessionManager
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        
+        Group {
+            if session.loggedUser != nil {
+                HomeMapView()
+            }
+            else {
+                NavigationView {
+                    LoginView()
+                }
+            }
+    }
     }
 }
 

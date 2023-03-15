@@ -11,7 +11,6 @@
 		11ECA64829C01BA500D797C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECA64729C01BA500D797C8 /* ContentView.swift */; };
 		11ECA64A29C01BA600D797C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11ECA64929C01BA600D797C8 /* Assets.xcassets */; };
 		11ECA64D29C01BA600D797C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11ECA64C29C01BA600D797C8 /* Preview Assets.xcassets */; };
-		11ECA65629C0234300D797C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11ECA65529C0234300D797C8 /* GoogleService-Info.plist */; };
 		11ECA65929C0247200D797C8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 11ECA65829C0247200D797C8 /* FirebaseAnalytics */; };
 		11ECA65B29C0247200D797C8 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 11ECA65A29C0247200D797C8 /* FirebaseAnalyticsSwift */; };
 		11ECA65D29C0247200D797C8 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 11ECA65C29C0247200D797C8 /* FirebaseAppCheck */; };
@@ -29,6 +28,13 @@
 		11ECA68129C029A500D797C8 /* HomeMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECA68029C029A500D797C8 /* HomeMapViewRepresentable.swift */; };
 		11ECA68329C0392200D797C8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECA68229C0392200D797C8 /* LocationManager.swift */; };
 		11ECA68829C0AAF900D797C8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECA68729C0AAF900D797C8 /* LoginView.swift */; };
+		F3E6884529C0B527008D880A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3E6884429C0B527008D880A /* GoogleService-Info.plist */; };
+		F3E6884929C15992008D880A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6884829C15992008D880A /* SessionManager.swift */; };
+		F3E6884B29C159CD008D880A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6884A29C159CD008D880A /* RegisterView.swift */; };
+		F3E6885129C15ADA008D880A /* DancingScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E6884D29C15ADA008D880A /* DancingScript-Bold.ttf */; };
+		F3E6885229C15ADA008D880A /* DancingScript-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E6884E29C15ADA008D880A /* DancingScript-Medium.ttf */; };
+		F3E6885329C15ADA008D880A /* DancingScript-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E6884F29C15ADA008D880A /* DancingScript-SemiBold.ttf */; };
+		F3E6885429C15ADA008D880A /* DancingScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E6885029C15ADA008D880A /* DancingScript-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,11 +43,18 @@
 		11ECA64729C01BA500D797C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		11ECA64929C01BA600D797C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11ECA64C29C01BA600D797C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		11ECA65529C0234300D797C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		11ECA67E29C0287700D797C8 /* HomeMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapView.swift; sourceTree = "<group>"; };
 		11ECA68029C029A500D797C8 /* HomeMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMapViewRepresentable.swift; sourceTree = "<group>"; };
 		11ECA68229C0392200D797C8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		11ECA68729C0AAF900D797C8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F3E6884429C0B527008D880A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3E6884829C15992008D880A /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		F3E6884A29C159CD008D880A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F3E6884D29C15ADA008D880A /* DancingScript-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Bold.ttf"; sourceTree = "<group>"; };
+		F3E6884E29C15ADA008D880A /* DancingScript-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Medium.ttf"; sourceTree = "<group>"; };
+		F3E6884F29C15ADA008D880A /* DancingScript-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-SemiBold.ttf"; sourceTree = "<group>"; };
+		F3E6885029C15ADA008D880A /* DancingScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Regular.ttf"; sourceTree = "<group>"; };
+		F3E6885529C15B08008D880A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +100,14 @@
 		11ECA64429C01BA500D797C8 /* caught-a-vibe */ = {
 			isa = PBXGroup;
 			children = (
-				11ECA67629C024DB00D797C8 /* Models */,
+				F3E6885529C15B08008D880A /* Info.plist */,
+				F3E6884C29C15ACE008D880A /* Fonts */,
+				F3E6884729C0B613008D880A /* Extensions */,
+				F3E6884629C0B5DB008D880A /* Models */,
+				F3E6884429C0B527008D880A /* GoogleService-Info.plist */,
 				11ECA67529C024D100D797C8 /* Managers */,
-				11ECA67429C024BB00D797C8 /* Extensions */,
 				11ECA67329C024B300D797C8 /* Core */,
 				11ECA67229C024AA00D797C8 /* App */,
-				11ECA65529C0234300D797C8 /* GoogleService-Info.plist */,
 				11ECA64929C01BA600D797C8 /* Assets.xcassets */,
 				11ECA64B29C01BA600D797C8 /* Preview Content */,
 			);
@@ -125,26 +140,13 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		11ECA67429C024BB00D797C8 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		11ECA67529C024D100D797C8 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				11ECA68229C0392200D797C8 /* LocationManager.swift */,
+				F3E6884829C15992008D880A /* SessionManager.swift */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		11ECA67629C024DB00D797C8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		11ECA67829C0250A00D797C8 /* Content */ = {
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				11ECA68729C0AAF900D797C8 /* LoginView.swift */,
+				F3E6884A29C159CD008D880A /* RegisterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +221,31 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F3E6884629C0B5DB008D880A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3E6884729C0B613008D880A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3E6884C29C15ACE008D880A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F3E6884D29C15ADA008D880A /* DancingScript-Bold.ttf */,
+				F3E6884E29C15ADA008D880A /* DancingScript-Medium.ttf */,
+				F3E6885029C15ADA008D880A /* DancingScript-Regular.ttf */,
+				F3E6884F29C15ADA008D880A /* DancingScript-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,8 +325,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				11ECA64D29C01BA600D797C8 /* Preview Assets.xcassets in Resources */,
+				F3E6885329C15ADA008D880A /* DancingScript-SemiBold.ttf in Resources */,
+				F3E6885129C15ADA008D880A /* DancingScript-Bold.ttf in Resources */,
+				F3E6885429C15ADA008D880A /* DancingScript-Regular.ttf in Resources */,
+				F3E6884529C0B527008D880A /* GoogleService-Info.plist in Resources */,
+				F3E6885229C15ADA008D880A /* DancingScript-Medium.ttf in Resources */,
 				11ECA64A29C01BA600D797C8 /* Assets.xcassets in Resources */,
-				11ECA65629C0234300D797C8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +346,9 @@
 				11ECA67F29C0287700D797C8 /* HomeMapView.swift in Sources */,
 				11ECA68329C0392200D797C8 /* LocationManager.swift in Sources */,
 				11ECA64629C01BA500D797C8 /* caught_a_vibeApp.swift in Sources */,
+				F3E6884B29C159CD008D880A /* RegisterView.swift in Sources */,
 				11ECA68129C029A500D797C8 /* HomeMapViewRepresentable.swift in Sources */,
+				F3E6884929C15992008D880A /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,8 +477,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"caught-a-vibe/Preview Content\"";
+				DEVELOPMENT_TEAM = 22DVX8F9MG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "caught-a-vibe/Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to use your location to find potential vibes near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -472,8 +508,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"caught-a-vibe/Preview Content\"";
+				DEVELOPMENT_TEAM = 22DVX8F9MG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "caught-a-vibe/Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to use your location to find potential vibes near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
