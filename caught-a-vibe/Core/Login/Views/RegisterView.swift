@@ -35,8 +35,7 @@ struct RegisterView: View {
                 .frame(height: 32)
                 .padding(.bottom, 20)
             Button(action: {
-                session.signup(email: email, password: password)
-                firestoreManager.createUser(userFirstName: firstName, userLastName: lastName, userEmail: email)
+                session.signup(email: email, password: password, firstName: firstName, lastName: lastName, userEmail: email)
             }) {
                 Text("Start vibin'")
                     .frame(maxWidth: .infinity)
