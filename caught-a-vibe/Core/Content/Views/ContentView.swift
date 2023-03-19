@@ -11,12 +11,17 @@ import Firebase
 struct ContentView: View {
 
     @EnvironmentObject var session: SessionManager
+    
+    @State private var isSideBarOpened = false
 
     var body: some View {
         
         Group {
             if session.loggedUser != nil {
-                HomeMapView()
+                ZStack{
+                    HomeMapView()
+                    SideMenu(isSidebarVisible: $isSideBarOpened)
+                }
             }
             else {
                 NavigationView {
@@ -27,8 +32,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}

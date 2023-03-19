@@ -10,6 +10,8 @@ import Firebase
 
 class FirestoreManager: ObservableObject {
     
+    static let sharedFirestoreManager = FirestoreManager()
+    
     func createUser(userFirstName: String, userLastName: String, userEmail: String, uid: String) {
         let db = Firestore.firestore()
         
