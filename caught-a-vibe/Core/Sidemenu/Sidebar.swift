@@ -139,7 +139,7 @@ struct SideMenu: View {
                         .foregroundColor(.white)
                         .bold()
                         .font(.title3)
-                    Text(verbatim: (session.loggedUser?.email)!)
+                    Text(verbatim: session.loggedUser?.email ?? "hi mom")
                         .foregroundColor(secondaryColor)
                         .font(.caption)
                 }

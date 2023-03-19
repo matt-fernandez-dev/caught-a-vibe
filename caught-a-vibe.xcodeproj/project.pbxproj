@@ -106,7 +106,6 @@
 		11ECA64429C01BA500D797C8 /* caught-a-vibe */ = {
 			isa = PBXGroup;
 			children = (
-				F3C12FC429C7C7D700A07330 /* Sidemenu */,
 				F3E6885529C15B08008D880A /* Info.plist */,
 				F3E6884C29C15ACE008D880A /* Fonts */,
 				F3E6884729C0B613008D880A /* Extensions */,
@@ -140,6 +139,7 @@
 		11ECA67329C024B300D797C8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				F3C12FC429C7C7D700A07330 /* Sidemenu */,
 				11ECA68429C0AACB00D797C8 /* Login */,
 				11ECA67B29C0283F00D797C8 /* HomeMap */,
 				11ECA67829C0250A00D797C8 /* Content */,
