@@ -14,33 +14,13 @@ var secondaryColor: Color =
                 blue: 255 / 255,
                 alpha: 1))
 
-struct MenuItem: Identifiable {
-    var id: Int
-    var icon: String
-    var text: String
-}
-
-var userActions: [MenuItem] = [
-    MenuItem(id: 4001, icon: "person.circle.fill", text: "My Account"),
-    MenuItem(id: 4002, icon: "bag.fill", text: "My Orders"),
-    MenuItem(id: 4003, icon: "gift.fill", text: "Wishlist"),
-]
-
-var profileActions: [MenuItem] = [
-    MenuItem(id: 4004,
-              icon: "wrench.and.screwdriver.fill",
-              text: "Settings"),
-    MenuItem(id: 4005,
-              icon: "iphone.and.arrow.forward",
-              text: "Logout")
-,
-]
-
 struct SideMenu: View {
     
     @EnvironmentObject var session: SessionManager
     
     @Binding var isSidebarVisible: Bool
+    
+    @Binding var viewToShow: String
     
     var sideBarWidth = UIScreen.main.bounds.size.width * 0.7
     var bgColor: Color = Color(.init(
@@ -74,10 +54,18 @@ struct SideMenu: View {
 
                 VStack(alignment: .leading, spacing: 20) {
                     userProfile
-                    Divider()
-                    MenuLinks(items: userActions)
-                    Divider()
-                    MenuLinks(items: profileActions)
+                    menuLink(icon: "person.circle.fill", text: "Map").onTapGesture {
+                        viewToShow = "Home"
+                        isSidebarVisible.toggle()
+                    }
+                    menuLink(icon: "wrench.and.screwdriver.fill", text: "Settings").onTapGesture {
+                        viewToShow = "Settings"
+                        isSidebarVisible.toggle()
+                    }
+                    menuLink(icon: "iphone.and.arrow.forward", text: "Logout").onTapGesture {
+                        session.logout()
+                        isSidebarVisible.toggle()
+                    }
                 }
                 .padding(.top, 80)
                 .padding(.horizontal, 40)
@@ -147,37 +135,37 @@ struct SideMenu: View {
             .padding(.bottom, 20)
         }
     }
-}
-
-struct MenuLinks: View {
-    var items: [MenuItem]
-    var body: some View {
-        VStack(alignment: .leading, spacing: 30) {
-            ForEach(items) { item in
-                menuLink(icon: item.icon, text: item.text)
+    
+//    struct MenuLinks: View {
+//        var items: [MenuItem]
+//        var body: some View {
+//            VStack(alignment: .leading, spacing: 30) {
+//                ForEach(items) { item in
+//                    menuLink(icon: item.icon, text: item.text, onTap: item.onTap)
+//                }
+//            }
+//            .padding(.vertical, 14)
+//            .padding(.leading, 8)
+//        }
+//    }
+//
+    struct menuLink: View {
+        var icon: String
+        var text: String
+        var onTap: ()
+        var body: some View {
+            HStack {
+                Image(systemName: icon)
+                    .resizable()
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(secondaryColor)
+                    .padding(.trailing, 18)
+                Text(text)
+                    .foregroundColor(.white)
+                    .font(.body)
             }
         }
-        .padding(.vertical, 14)
-        .padding(.leading, 8)
     }
 }
 
-struct menuLink: View {
-    var icon: String
-    var text: String
-    var body: some View {
-        HStack {
-            Image(systemName: icon)
-                .resizable()
-                .frame(width: 20, height: 20)
-                .foregroundColor(secondaryColor)
-                .padding(.trailing, 18)
-            Text(text)
-                .foregroundColor(.white)
-                .font(.body)
-        }
-        .onTapGesture {
-            print("Tapped on \(text)")
-        }
-    }
-}
+

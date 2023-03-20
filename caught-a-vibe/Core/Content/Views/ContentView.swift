@@ -13,14 +13,24 @@ struct ContentView: View {
     @EnvironmentObject var session: SessionManager
     
     @State private var isSideBarOpened = false
+    
+    @State private var viewToShow = "Home"
 
     var body: some View {
         
         Group {
             if session.loggedUser != nil {
                 ZStack{
-                    HomeMapView()
-                    SideMenu(isSidebarVisible: $isSideBarOpened)
+                    switch viewToShow {
+                    case "Home":
+                        HomeMapView()
+                    case "Settings":
+                        SettingsView()
+                    default:
+                        HomeMapView()
+                    }
+                    
+                    SideMenu(isSidebarVisible: $isSideBarOpened, viewToShow: $viewToShow)
                 }
             }
             else {

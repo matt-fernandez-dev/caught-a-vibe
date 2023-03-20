@@ -30,6 +30,7 @@
 		11ECA68829C0AAF900D797C8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECA68729C0AAF900D797C8 /* LoginView.swift */; };
 		F3C12FC329C4E94D00A07330 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C12FC229C4E94D00A07330 /* RegisterViewModel.swift */; };
 		F3C12FC629C7C80200A07330 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C12FC529C7C80200A07330 /* Sidebar.swift */; };
+		F3C12FC929C7E1F200A07330 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C12FC829C7E1F200A07330 /* SettingsView.swift */; };
 		F3E6884529C0B527008D880A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3E6884429C0B527008D880A /* GoogleService-Info.plist */; };
 		F3E6884929C15992008D880A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6884829C15992008D880A /* SessionManager.swift */; };
 		F3E6884B29C159CD008D880A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E6884A29C159CD008D880A /* RegisterView.swift */; };
@@ -52,6 +53,7 @@
 		11ECA68729C0AAF900D797C8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F3C12FC229C4E94D00A07330 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewModel.swift; path = "caught-a-vibe/Managers/RegisterViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		F3C12FC529C7C80200A07330 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		F3C12FC829C7E1F200A07330 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F3E6884429C0B527008D880A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3E6884829C15992008D880A /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		F3E6884A29C159CD008D880A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		11ECA67329C024B300D797C8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				F3C12FC729C7E1DE00A07330 /* Settings */,
 				F3C12FC429C7C7D700A07330 /* Sidemenu */,
 				11ECA68429C0AACB00D797C8 /* Login */,
 				11ECA67B29C0283F00D797C8 /* HomeMap */,
@@ -238,6 +241,14 @@
 				F3C12FC529C7C80200A07330 /* Sidebar.swift */,
 			);
 			path = Sidemenu;
+			sourceTree = "<group>";
+		};
+		F3C12FC729C7E1DE00A07330 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F3C12FC829C7E1F200A07330 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		F3E6884629C0B5DB008D880A /* Models */ = {
@@ -367,6 +378,7 @@
 				F3E6884B29C159CD008D880A /* RegisterView.swift in Sources */,
 				11ECA68129C029A500D797C8 /* HomeMapViewRepresentable.swift in Sources */,
 				F3C12FC629C7C80200A07330 /* Sidebar.swift in Sources */,
+				F3C12FC929C7E1F200A07330 /* SettingsView.swift in Sources */,
 				F3E6885729C1FE4D008D880A /* FirestoreManager.swift in Sources */,
 				F3E6884929C15992008D880A /* SessionManager.swift in Sources */,
 			);
