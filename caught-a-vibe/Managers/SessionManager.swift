@@ -15,6 +15,8 @@ class SessionManager: NSObject, ObservableObject {
     static let shared = SessionManager()
     private let auth = Auth.auth()
     
+    let firestoreManager = FirestoreManager()
+    
     var handle : AuthStateDidChangeListenerHandle?
     
     override private init() {
@@ -46,11 +48,12 @@ class SessionManager: NSObject, ObservableObject {
         }
     }
     
-    func signup(email: String, password: String) {
+    func signup(email: String, password: String, firstName: String, lastName: String, userEmail: String) {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if error != nil {
                 print(error?.localizedDescription ?? "")
             } else {
+                self.firestoreManager.createUser(userFirstName: firstName, userLastName: lastName, userEmail: email, uid: authResult!.user.uid)
                 print("success")
             }
         }

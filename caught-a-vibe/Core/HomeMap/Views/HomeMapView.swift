@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct HomeMapView: View {
+    
+    @EnvironmentObject var session: SessionManager
+    
     var body: some View {
         HomeMapViewRepresentable()
             .ignoresSafeArea()
+        
+//        Button(action: { session.logout() }) {
+//                    Text("logout")
+//                }
+        
     }
 }
 
