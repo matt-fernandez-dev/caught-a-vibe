@@ -54,11 +54,13 @@ struct SideMenu: View {
 
                 VStack(alignment: .leading, spacing: 20) {
                     userProfile
-                    menuLink(icon: "person.circle.fill", text: "Map").onTapGesture {
+                    menuLink(icon: "map", text: "Map").onTapGesture {
                         viewToShow = "Home"
                         isSidebarVisible.toggle()
                     }
-                    menuLink(icon: "wrench.and.screwdriver.fill", text: "Settings").onTapGesture {
+                    menuLink(icon: "message", text: "Chat")
+                    menuLink(icon: "envelope", text: "Matches")
+                    menuLink(icon: "gearshape", text: "Settings").onTapGesture {
                         viewToShow = "Settings"
                         isSidebarVisible.toggle()
                     }
