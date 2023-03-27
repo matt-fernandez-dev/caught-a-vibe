@@ -15,9 +15,6 @@ struct HomeMapView: View {
         HomeMapViewRepresentable()
             .ignoresSafeArea()
         
-//        Button(action: { session.logout() }) {
-//                    Text("logout")
-//                }
         
     }
 }
