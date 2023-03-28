@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11A5F15629D248C100C850E4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5F15529D248C100C850E4 /* UserModel.swift */; };
+		11A5F15829D24BDF00C850E4 /* UsersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5F15729D24BDF00C850E4 /* UsersManager.swift */; };
+		11A5F15A29D35C6800C850E4 /* LocationPingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5F15929D35C6800C850E4 /* LocationPingsManager.swift */; };
+		11A5F15C29D360DB00C850E4 /* LocationPingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5F15B29D360DB00C850E4 /* LocationPingModel.swift */; };
+		11A5F15E29D362DA00C850E4 /* ChatMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5F15D29D362DA00C850E4 /* ChatMessageModel.swift */; };
 		11ECA64629C01BA500D797C8 /* caught_a_vibeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECA64529C01BA500D797C8 /* caught_a_vibeApp.swift */; };
 		11ECA64829C01BA500D797C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECA64729C01BA500D797C8 /* ContentView.swift */; };
 		11ECA64A29C01BA600D797C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11ECA64929C01BA600D797C8 /* Assets.xcassets */; };
@@ -42,6 +47,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11A5F15529D248C100C850E4 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = "caught-a-vibe/UserModel.swift"; sourceTree = SOURCE_ROOT; };
+		11A5F15729D24BDF00C850E4 /* UsersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersManager.swift; sourceTree = "<group>"; };
+		11A5F15929D35C6800C850E4 /* LocationPingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPingsManager.swift; sourceTree = "<group>"; };
+		11A5F15B29D360DB00C850E4 /* LocationPingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationPingModel.swift; path = "caught-a-vibe/Managers/LocationPingModel.swift"; sourceTree = SOURCE_ROOT; };
+		11A5F15D29D362DA00C850E4 /* ChatMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatMessageModel.swift; path = "caught-a-vibe/Managers/ChatMessageModel.swift"; sourceTree = SOURCE_ROOT; };
 		11ECA64229C01BA500D797C8 /* caught-a-vibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "caught-a-vibe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ECA64529C01BA500D797C8 /* caught_a_vibeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caught_a_vibeApp.swift; sourceTree = "<group>"; };
 		11ECA64729C01BA500D797C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -156,6 +166,8 @@
 				11ECA68229C0392200D797C8 /* LocationManager.swift */,
 				F3E6884829C15992008D880A /* SessionManager.swift */,
 				F3E6885629C1FE4D008D880A /* FirestoreManager.swift */,
+				11A5F15729D24BDF00C850E4 /* UsersManager.swift */,
+				11A5F15929D35C6800C850E4 /* LocationPingsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -254,6 +266,9 @@
 		F3E6884629C0B5DB008D880A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				11A5F15529D248C100C850E4 /* UserModel.swift */,
+				11A5F15B29D360DB00C850E4 /* LocationPingModel.swift */,
+				11A5F15D29D362DA00C850E4 /* ChatMessageModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -369,7 +384,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A5F15629D248C100C850E4 /* UserModel.swift in Sources */,
 				11ECA68829C0AAF900D797C8 /* LoginView.swift in Sources */,
+				11A5F15829D24BDF00C850E4 /* UsersManager.swift in Sources */,
 				F3C12FC329C4E94D00A07330 /* RegisterViewModel.swift in Sources */,
 				11ECA64829C01BA500D797C8 /* ContentView.swift in Sources */,
 				11ECA67F29C0287700D797C8 /* HomeMapView.swift in Sources */,
@@ -377,7 +394,10 @@
 				11ECA64629C01BA500D797C8 /* caught_a_vibeApp.swift in Sources */,
 				F3E6884B29C159CD008D880A /* RegisterView.swift in Sources */,
 				11ECA68129C029A500D797C8 /* HomeMapViewRepresentable.swift in Sources */,
+				11A5F15E29D362DA00C850E4 /* ChatMessageModel.swift in Sources */,
+				11A5F15C29D360DB00C850E4 /* LocationPingModel.swift in Sources */,
 				F3C12FC629C7C80200A07330 /* Sidebar.swift in Sources */,
+				11A5F15A29D35C6800C850E4 /* LocationPingsManager.swift in Sources */,
 				F3C12FC929C7E1F200A07330 /* SettingsView.swift in Sources */,
 				F3E6885729C1FE4D008D880A /* FirestoreManager.swift in Sources */,
 				F3E6884929C15992008D880A /* SessionManager.swift in Sources */,

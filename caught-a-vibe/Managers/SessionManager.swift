@@ -16,6 +16,7 @@ class SessionManager: NSObject, ObservableObject {
     private let auth = Auth.auth()
     
     let firestoreManager = FirestoreManager()
+    let usersManager = UsersManager()
     
     var handle : AuthStateDidChangeListenerHandle?
     
@@ -53,7 +54,7 @@ class SessionManager: NSObject, ObservableObject {
             if error != nil {
                 print(error?.localizedDescription ?? "")
             } else {
-                self.firestoreManager.createUser(userFirstName: firstName, userLastName: lastName, userEmail: email, uid: authResult!.user.uid)
+                self.usersManager.createUser(first_name: firstName, last_name: lastName, email: email, uid: authResult!.user.uid)
                 print("success")
             }
         }
