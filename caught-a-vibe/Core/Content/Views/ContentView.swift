@@ -10,7 +10,7 @@ import Firebase
 
 struct ContentView: View {
 
-//    @EnvironmentObject var session: SessionManager
+    @EnvironmentObject var session: FirebaseManager
     
     @State private var isSideBarOpened = false
     
@@ -19,7 +19,7 @@ struct ContentView: View {
     var body: some View {
         
         Group {
-            if FirebaseManager.shared.auth.currentUser != nil {
+            if session.loggedUser != nil {
                 ZStack{
                     switch viewToShow {
                     case "Home":

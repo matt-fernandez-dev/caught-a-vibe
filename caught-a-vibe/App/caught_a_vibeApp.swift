@@ -19,7 +19,7 @@ struct caught_a_vibeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-//                .environmentObject(SessionManager.shared)
+                .environmentObject(FirebaseManager.shared)
         }
     }
 }
