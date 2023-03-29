@@ -7,13 +7,14 @@
 
 import Foundation
 import FirebaseFirestore
-
+import FirebaseFirestoreSwift
 
 struct LocationPingModel: Identifiable, Codable {
     
-    var id: String
-    var geopoint: GeoPoint
+    @DocumentID var id: String?
+    var coordinate: GeoPoint
     var timestamp: Timestamp
+    var user_id: String
     
     
     
