@@ -9,9 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     
-    @EnvironmentObject var session: SessionManager
-    
-    var firestoreManager = FirestoreManager()
+    @ObservedObject private var userVM = UsersManager()
     
     @State var firstName = ""
     @State var lastName = ""
@@ -35,7 +33,7 @@ struct RegisterView: View {
                 .frame(height: 32)
                 .padding(.bottom, 20)
             Button(action: {
-                session.signup(email: email, password: password, firstName: firstName, lastName: lastName, userEmail: email)
+                userVM.signup(email: email, password: password, firstName: firstName, lastName: lastName, userEmail: email)
             }) {
                 Text("Start vibin'")
                     .frame(maxWidth: .infinity)

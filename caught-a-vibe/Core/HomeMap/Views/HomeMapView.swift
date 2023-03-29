@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeMapView: View {
     
-    @EnvironmentObject var session: SessionManager
+//    @EnvironmentObject var session: SessionManager
     
     var body: some View {
         HomeMapViewRepresentable()

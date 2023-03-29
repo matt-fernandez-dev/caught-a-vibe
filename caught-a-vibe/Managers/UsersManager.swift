@@ -70,4 +70,15 @@ class UsersManager: ObservableObject {
             print("Error adding user to Firestore: \(error)")
         }
     }
+    
+    func signup(email: String, password: String, firstName: String, lastName: String, userEmail: String) {
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if error != nil {
+                print(error?.localizedDescription ?? "")
+            } else {
+                self.createUser(first_name: firstName, last_name: lastName, email: email, uid: authResult!.user.uid)
+                print("success")
+            }
+        }
+    }
 }

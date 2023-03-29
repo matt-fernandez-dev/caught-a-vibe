@@ -13,8 +13,8 @@ struct LoginView: View {
 //    @EnvironmentObject var session: SessionManager
     @ObservedObject private var userVM = UsersManager()
     
-    @State var email = ""
-    @State var password = ""
+    @State private var email = ""
+    @State private var password = ""
     
     var body: some View {
         VStack {
