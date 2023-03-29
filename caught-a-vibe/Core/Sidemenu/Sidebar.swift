@@ -16,6 +16,8 @@ var secondaryColor: Color =
 
 struct SideMenu: View {
     
+    @ObservedObject private var userVM = UsersManager()
+    
     @EnvironmentObject var session: SessionManager
     
     @Binding var isSidebarVisible: Bool
@@ -125,11 +127,11 @@ struct SideMenu: View {
                 .padding(.trailing, 18)
 
                 VStack(alignment: .leading, spacing: 6) {
-                    Text(session.loggedUser?.displayName ?? "hi mom")
+                    Text(userVM.currentUser?.first_name ?? "hi mom")
                         .foregroundColor(.white)
                         .bold()
                         .font(.title3)
-                    Text(verbatim: session.loggedUser?.email ?? "hi mom")
+                    Text(verbatim: userVM.currentUser?.email ?? "hi mom")
                         .foregroundColor(secondaryColor)
                         .font(.caption)
                 }
