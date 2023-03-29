@@ -49,7 +49,9 @@ class UsersManager: ObservableObject {
             let first_name = data["first_name"] as? String ?? ""
             let last_name = data["last_name"] as? String ?? ""
             
-            self.currentUser = UserModel(email: email, first_name: first_name, last_name: last_name)
+            self.currentUser = UserModel(id: uid, email: email, first_name: first_name, last_name: last_name)
+            
+            print(self.currentUser?.id as Any)
         }
     }
     
