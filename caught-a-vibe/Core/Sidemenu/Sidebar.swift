@@ -16,7 +16,7 @@ var secondaryColor: Color =
 
 struct SideMenu: View {
     
-    @ObservedObject private var userVM = UsersManager()
+    @ObservedObject private var userVM = UserManager()
     
     @Binding var isSidebarVisible: Bool
     

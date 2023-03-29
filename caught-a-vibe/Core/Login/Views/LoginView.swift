@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-import Firebase
+//import Firebase
 
 struct LoginView: View {
     
 //    @EnvironmentObject var session: SessionManager
-    @ObservedObject private var userVM = UsersManager()
+    @ObservedObject private var userVM = UserManager()
     
     @State private var email = ""
     @State private var password = ""
@@ -27,7 +27,7 @@ struct LoginView: View {
             SecureField("Password", text: $password)
                 .frame(height: 32)
                 .padding(.bottom, 20)
-            Button(action: { self.loginUser() }) {
+            Button(action: { userVM.loginUser(email: email, password: password) }) {
                 Text("Sign in")
                     .frame(maxWidth: .infinity)
                     .foregroundColor(.white)
@@ -48,21 +48,6 @@ struct LoginView: View {
             }
         }
         .padding()
-    }
-    
-    func loginUser() {
-        FirebaseManager.shared.auth.signIn(withEmail: email, password: password) {
-            result, error in
-            if let err = error {
-//                self.loginStatusMessage = "Failed to sign in: \(err.localizedDescription)"
-                print(err)
-                return
-            }
-            
-//            self.loginStatusMessage = "Successfully signed in user: \(result?.user.uid ?? "")"
-            
-//            self.didCompleteLoginProcess()
-        }
     }
 }
 

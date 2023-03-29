@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11A5F15629D248C100C850E4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5F15529D248C100C850E4 /* UserModel.swift */; };
-		11A5F15829D24BDF00C850E4 /* UsersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5F15729D24BDF00C850E4 /* UsersManager.swift */; };
+		11A5F15829D24BDF00C850E4 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5F15729D24BDF00C850E4 /* UserManager.swift */; };
 		11A5F15A29D35C6800C850E4 /* LocationPingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5F15929D35C6800C850E4 /* LocationPingsManager.swift */; };
 		11A5F15C29D360DB00C850E4 /* LocationPingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5F15B29D360DB00C850E4 /* LocationPingModel.swift */; };
 		11A5F15E29D362DA00C850E4 /* ChatMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5F15D29D362DA00C850E4 /* ChatMessageModel.swift */; };
@@ -49,7 +49,7 @@
 
 /* Begin PBXFileReference section */
 		11A5F15529D248C100C850E4 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = "caught-a-vibe/UserModel.swift"; sourceTree = SOURCE_ROOT; };
-		11A5F15729D24BDF00C850E4 /* UsersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersManager.swift; sourceTree = "<group>"; };
+		11A5F15729D24BDF00C850E4 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		11A5F15929D35C6800C850E4 /* LocationPingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPingsManager.swift; sourceTree = "<group>"; };
 		11A5F15B29D360DB00C850E4 /* LocationPingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationPingModel.swift; path = "caught-a-vibe/Managers/LocationPingModel.swift"; sourceTree = SOURCE_ROOT; };
 		11A5F15D29D362DA00C850E4 /* ChatMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatMessageModel.swift; path = "caught-a-vibe/Managers/ChatMessageModel.swift"; sourceTree = SOURCE_ROOT; };
@@ -168,7 +168,7 @@
 				11ECA68229C0392200D797C8 /* LocationManager.swift */,
 				F3E6884829C15992008D880A /* SessionManager.swift */,
 				F3E6885629C1FE4D008D880A /* FirestoreManager.swift */,
-				11A5F15729D24BDF00C850E4 /* UsersManager.swift */,
+				11A5F15729D24BDF00C850E4 /* UserManager.swift */,
 				11A5F15929D35C6800C850E4 /* LocationPingsManager.swift */,
 				F3D6FAD429D4B0B6007F3845 /* FirebaseManager.swift */,
 			);
@@ -389,7 +389,7 @@
 			files = (
 				11A5F15629D248C100C850E4 /* UserModel.swift in Sources */,
 				11ECA68829C0AAF900D797C8 /* LoginView.swift in Sources */,
-				11A5F15829D24BDF00C850E4 /* UsersManager.swift in Sources */,
+				11A5F15829D24BDF00C850E4 /* UserManager.swift in Sources */,
 				F3C12FC329C4E94D00A07330 /* RegisterViewModel.swift in Sources */,
 				11ECA64829C01BA500D797C8 /* ContentView.swift in Sources */,
 				11ECA67F29C0287700D797C8 /* HomeMapView.swift in Sources */,

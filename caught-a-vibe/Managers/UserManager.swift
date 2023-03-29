@@ -6,10 +6,10 @@
 //
 
 import Foundation
-import Firebase
-import FirebaseFirestoreSwift
+//import Firebase
+//import FirebaseFirestoreSwift
 
-class UsersManager: ObservableObject {
+class UserManager: ObservableObject {
     
     @Published var errorMessage = ""
     @Published var currentUser: UserModel?
@@ -72,13 +72,36 @@ class UsersManager: ObservableObject {
     }
     
     func signup(email: String, password: String, firstName: String, lastName: String, userEmail: String) {
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+        FirebaseManager.shared.auth.createUser(withEmail: email, password: password) { authResult, error in
             if error != nil {
                 print(error?.localizedDescription ?? "")
             } else {
                 self.createUser(first_name: firstName, last_name: lastName, email: email, uid: authResult!.user.uid)
                 print("success")
             }
+        }
+    }
+    
+    func loginUser(email: String, password: String) {
+        FirebaseManager.shared.auth.signIn(withEmail: email, password: password) {
+            result, error in
+            if let err = error {
+//                self.loginStatusMessage = "Failed to sign in: \(err.localizedDescription)"
+                print(err)
+                return
+            }
+            
+//            self.loginStatusMessage = "Successfully signed in user: \(result?.user.uid ?? "")"
+            
+//            self.didCompleteLoginProcess()
+        }
+    }
+    
+    func logout() {
+        do {
+            try FirebaseManager.shared.auth.signOut()
+        } catch(let error) {
+            debugPrint(error.localizedDescription)
         }
     }
 }

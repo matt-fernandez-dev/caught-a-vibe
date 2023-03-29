@@ -38,12 +38,4 @@ class FirebaseManager: NSObject, ObservableObject {
         handle = auth.addStateDidChangeListener(authStateChanged)
     }
     
-    func logout() {
-        do {
-            try Auth.auth().signOut()
-        } catch(let error) {
-            debugPrint(error.localizedDescription)
-        }
-    }
-    
 }
