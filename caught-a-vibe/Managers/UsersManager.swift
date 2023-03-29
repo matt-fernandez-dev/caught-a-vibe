@@ -26,7 +26,7 @@ class UsersManager: ObservableObject {
         fetchCurrentUser()
     }
     
-    func fetchCurrentUser() {
+    private func fetchCurrentUser() {
         
         guard let uid = FirebaseManager.shared.auth.currentUser?.uid else {
             self.errorMessage = "Could not find firebase uid"
@@ -55,10 +55,10 @@ class UsersManager: ObservableObject {
         }
     }
     
-    func handleSignOut() {
-        isUserCurrentlyLoggedOut.toggle()
-        try? FirebaseManager.shared.auth.signOut()
-    }
+//    func handleSignOut() {
+//        isUserCurrentlyLoggedOut.toggle()
+//        try? FirebaseManager.shared.auth.signOut()
+//    }
     
     func createUser(first_name: String, last_name: String, email: String, uid: String){
 
