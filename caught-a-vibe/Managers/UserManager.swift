@@ -6,16 +6,12 @@
 //
 
 import Foundation
-//import Firebase
-//import FirebaseFirestoreSwift
 
 class UserManager: ObservableObject {
     
     @Published var errorMessage = ""
     @Published var currentUser: UserModel?
     @Published var isUserCurrentlyLoggedOut = false
-    
-//    static let sharedUsersManager = UsersManager()
     
     init() {
         
@@ -44,7 +40,6 @@ class UserManager: ObservableObject {
                 return
             }
             
-//            let uid = data["uid"] as? String ?? ""
             let email = data["email"] as? String ?? ""
             let first_name = data["first_name"] as? String ?? ""
             let last_name = data["last_name"] as? String ?? ""
@@ -92,8 +87,6 @@ class UserManager: ObservableObject {
             }
             
 //            self.loginStatusMessage = "Successfully signed in user: \(result?.user.uid ?? "")"
-            
-//            self.didCompleteLoginProcess()
         }
     }
     

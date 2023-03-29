@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     
-    @ObservedObject private var userVM = UserManager()
+    @ObservedObject private var userManager = UserManager()
     
     @State var firstName = ""
     @State var lastName = ""
@@ -33,7 +33,7 @@ struct RegisterView: View {
                 .frame(height: 32)
                 .padding(.bottom, 20)
             Button(action: {
-                userVM.signup(email: email, password: password, firstName: firstName, lastName: lastName, userEmail: email)
+                userManager.signup(email: email, password: password, firstName: firstName, lastName: lastName, userEmail: email)
             }) {
                 Text("Start vibin'")
                     .frame(maxWidth: .infinity)

@@ -16,7 +16,7 @@ var secondaryColor: Color =
 
 struct SideMenu: View {
     
-    @ObservedObject private var userVM = UserManager()
+    @ObservedObject private var userManager = UserManager()
     
     @Binding var isSidebarVisible: Bool
     
@@ -65,7 +65,7 @@ struct SideMenu: View {
                         isSidebarVisible.toggle()
                     }
                     menuLink(icon: "iphone.and.arrow.forward", text: "Logout").onTapGesture {
-                        userVM.handleSignOut()
+                        userManager.handleSignOut()
                         isSidebarVisible.toggle()
                     }
                 }
@@ -125,11 +125,11 @@ struct SideMenu: View {
                 .padding(.trailing, 18)
 
                 VStack(alignment: .leading, spacing: 6) {
-                    Text(userVM.currentUser?.first_name ?? "hi mom")
+                    Text(userManager.currentUser?.first_name ?? "hi mom")
                         .foregroundColor(.white)
                         .bold()
                         .font(.title3)
-                    Text(verbatim: userVM.currentUser?.email ?? "hi mom")
+                    Text(verbatim: userManager.currentUser?.email ?? "hi mom")
                         .foregroundColor(secondaryColor)
                         .font(.caption)
                 }

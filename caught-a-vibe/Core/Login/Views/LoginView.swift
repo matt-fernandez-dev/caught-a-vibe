@@ -11,7 +11,7 @@ import SwiftUI
 struct LoginView: View {
     
 //    @EnvironmentObject var session: SessionManager
-    @ObservedObject private var userVM = UserManager()
+    @ObservedObject private var userManager = UserManager()
     
     @State private var email = ""
     @State private var password = ""
@@ -27,7 +27,7 @@ struct LoginView: View {
             SecureField("Password", text: $password)
                 .frame(height: 32)
                 .padding(.bottom, 20)
-            Button(action: { userVM.loginUser(email: email, password: password) }) {
+            Button(action: { userManager.loginUser(email: email, password: password) }) {
                 Text("Sign in")
                     .frame(maxWidth: .infinity)
                     .foregroundColor(.white)
