@@ -55,10 +55,10 @@ class UsersManager: ObservableObject {
         }
     }
     
-//    func handleSignOut() {
-//        isUserCurrentlyLoggedOut.toggle()
-//        try? FirebaseManager.shared.auth.signOut()
-//    }
+    func handleSignOut() {
+        isUserCurrentlyLoggedOut.toggle()
+        try? FirebaseManager.shared.auth.signOut()
+    }
     
     func createUser(first_name: String, last_name: String, email: String, uid: String){
 

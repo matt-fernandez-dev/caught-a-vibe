@@ -15,7 +15,7 @@ class SessionManager: NSObject, ObservableObject {
     static let shared = SessionManager()
     private let auth = Auth.auth()
     
-    let firestoreManager = FirestoreManager()
+//    let firestoreManager = FirestoreManager()
     let usersManager = UsersManager()
     
     var handle : AuthStateDidChangeListenerHandle?

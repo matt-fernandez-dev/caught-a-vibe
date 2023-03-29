@@ -10,7 +10,8 @@ import Firebase
 
 struct LoginView: View {
     
-    @EnvironmentObject var session: SessionManager
+//    @EnvironmentObject var session: SessionManager
+    @ObservedObject private var userVM = UsersManager()
     
     @State var email = ""
     @State var password = ""
@@ -26,7 +27,7 @@ struct LoginView: View {
             SecureField("Password", text: $password)
                 .frame(height: 32)
                 .padding(.bottom, 20)
-            Button(action: { session.login(email: email, password: password) }) {
+            Button(action: { self.loginUser() }) {
                 Text("Sign in")
                     .frame(maxWidth: .infinity)
                     .foregroundColor(.white)
@@ -48,7 +49,24 @@ struct LoginView: View {
         }
         .padding()
     }
+    
+    func loginUser() {
+        FirebaseManager.shared.auth.signIn(withEmail: email, password: password) {
+            result, error in
+            if let err = error {
+//                self.loginStatusMessage = "Failed to sign in: \(err.localizedDescription)"
+                print(err)
+                return
+            }
+            
+//            self.loginStatusMessage = "Successfully signed in user: \(result?.user.uid ?? "")"
+            
+//            self.didCompleteLoginProcess()
+        }
+    }
 }
+
+
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {

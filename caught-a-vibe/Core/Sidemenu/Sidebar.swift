@@ -18,8 +18,6 @@ struct SideMenu: View {
     
     @ObservedObject private var userVM = UsersManager()
     
-    @EnvironmentObject var session: SessionManager
-    
     @Binding var isSidebarVisible: Bool
     
     @Binding var viewToShow: String
@@ -67,7 +65,7 @@ struct SideMenu: View {
                         isSidebarVisible.toggle()
                     }
                     menuLink(icon: "iphone.and.arrow.forward", text: "Logout").onTapGesture {
-                        session.logout()
+                        userVM.handleSignOut()
                         isSidebarVisible.toggle()
                     }
                 }
